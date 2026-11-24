@@ -6,6 +6,11 @@ name: dy-timeline
 description: 抖音公开数据时间线（只读）：关键词搜索、博主作品、作品详情、评论、热榜。触发：抖音搜索、热搜、评论、需求挖掘、痛点、作品详情、博主作品、对标账号、播放量、选题、舆情、竞品。小红书、快手、B站、微博、公众号不要用本技能。sec_uid、aweme_id、douyin search、douyin hot、douyin detail、douyin comments。
 license: MIT
 version: 1.5.1
+display_name: "抖音成长时间线｜发文节奏·历史作品·活动前后·话题升温"
+display_name_en: "Douyin Timeline"
+description_zh: "抖音公开数据时间线接口（只读）：作品详情、视频评论、博主作品、关键词搜索、实时热榜，按发布时间排布并回溯历史，复盘发文节奏、活动前后变化与话题升温过程"
+description_en: "Read-only Douyin timeline data source, no login, no ban risk. One command returns a creator's public posting history as structured JSON arranged by publish time, so AI can reconstruct the account timeline and review cadence. Capabilities: 1) Keyword search over videos and image posts, sorted by relevance, likes or newest, with 1/7/180-day windows. 2) User and creator search for benchmark accounts. 3) Creator post listing plus interactions-only mode (--limit 0) for follower and like counts; posts keep original publish times for backtracking. 4) Post detail: caption, plays, likes, comments, collects, shares, tags. 5) Comment scraping for sentiment. 6) Real-time hot list (~50 entries) to date-stamp topic heating. Recipes: map posting rhythm, compare metrics before vs after a campaign, trace topic heating. Scale: pay-as-you-go up to 10,000 items per call; monthly plans cap search and posts at 30, comments at 50, then PLAN_LIMIT. Needs Node.js 16.14+ and GUAIKEI_API_TOKEN."
+author: "新郑市怪奇信息技术工作室"
 metadata:
   openclaw:
     emoji: "🎬"
